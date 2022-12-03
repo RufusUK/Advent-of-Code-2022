@@ -1,7 +1,5 @@
-file = open("input.txt", "r")
+file = open("c:/Users/Ruth/OneDrive/Code/Advent of Code 2022/Day 1/input.txt", "r")
 calories = []
-twocal = []
-threecal = []
 x = 0
 
 # reading the file
@@ -22,4 +20,6 @@ for ele in list:
 calories.append(x)
 maxcal = max(calories)
 maxelf = calories.index(maxcal)
-print("\nElf number ", maxelf+1, " is carrying ", maxcal, " calories")
+print("Part 1 solution: Elf number ", maxelf+1, " is carrying ", maxcal, " calories")
+calories.sort(reverse=True)
+print("Part 2 solution: ",sum(calories[0:3]))
